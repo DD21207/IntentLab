@@ -45,7 +45,7 @@ export default {
 
                 this.$http({
                     method:'post',
-                    url:'http://10.143.103.231:8080/BMW/LoginServlet.do',
+                    url:'http://114.55.92.124:7070/BMW//LoginServlet.do',
                     data:{
                         'adminv':username,
                         'passv':password,

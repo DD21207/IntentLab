@@ -1,7 +1,7 @@
 <template>
   <div class="x-bar">
     <div :id="id"
-    :data="data"></div>
+    :data="data" :loadChart="loadChart"></div>
   </div>
 </template>
 
@@ -18,7 +18,8 @@ export default {
     },
     data: {
       
-    }
+    },
+     loadChart:Boolean
   },
   data(){
     return {
@@ -26,10 +27,10 @@ export default {
           chart: {
               type: 'line'
           },
-           lang: {
+          lang: {
             noData: "SELECTED COMBINATION HAS NO DATA" //真正显示的文本
-        },
-        noData: {  
+          },
+          noData: {  
             // Custom positioning/aligning options  
             position: {    //相对于绘图区定位无数据标签的位置。 默认值：[object Object].
                 align: 'center',  
@@ -46,14 +47,30 @@ export default {
                 //fontSize: '15px',  
                 //color: '#202030'          
             }  
-        },
-          colors:['#4AC7DC','#E96C39'],
+          },
+          colors:['rgb(74, 199, 220)','rgb(233, 108, 57)','rgb(47,208,181)','rgb(198,224,180)'],
           title: {
               text: null
           },
-           credits: {
-          enabled: false
-        },
+          Loading:{  
+              hideDuration: 1000,//淡出效果的持续时间（以毫秒为单位）  
+              showDuration: 1000,//淡入效果的持续时间（以毫秒为单位）  
+              labelStyle: {//加载标签的span的CSS样式  
+                  fontStyle: 'italic',  
+                  color:'red',  
+                  fontSize:"40px"  
+              },  
+              style: {//覆盖在绘图区的加载页面的样式  
+                  position: 'absolute',   
+                  backgroundColor: 'white',   
+                  opacity: 0.5,   
+                  textAlign: 'center',  
+                  color:'red'  
+              }   
+          },  
+          credits: {
+            enabled: false
+          },
           xAxis: {
               categories: this.data.xAxis,
               labels: {
@@ -74,9 +91,23 @@ export default {
   },
   methods: {  
         queryTrendData: function(){
-          this.option.xAxis.categories = this.data.xAxis
-          this.option.series = this.data.series
-          HighCharts.chart(this.id,this.option)
+          const loading = this.$loading({
+            lock: true,
+            text: 'Loading',
+            spinner: 'el-icon-loading',
+            background: 'rgba(0, 0, 0, 0.2)',
+            target: document.querySelector('#'+this.id)
+          });
+            if(this.loadChart == true){
+
+            }else{
+              loading.close()
+            this.option.xAxis.categories = this.data.xAxis
+            this.option.series = this.data.series
+            HighCharts.chart(this.id,this.option)
+            
+          }
+            
         }  
     }, 
   watch:{

@@ -78,35 +78,125 @@
 									<div class="reset_main_box">
 										<p>Category</p>
 										<select multiple="multiple" class="select_template" id="Category">
-									        <option v-for="item in Category_list" v-bind:value="item.value">{{item.value}}</option>
+									        <option v-for="item in Lists.Category" v-bind:value="item.value">{{item.value}}</option>
 									 
 									    </select>
 								    </div>
 									<div class="reset_main_box">
 										<p>Sub Category</p>
 										<select multiple="multiple" class="select_template" id="SubCategory">
-									        <option v-for="item in SubCategory_list" v-bind:value="item.value">{{item.value}}</option>
+									        <option v-for="item in Lists.SubCategory" v-bind:value="item.value">{{item.value}}</option>
 									        
 									    </select>
 								    </div>
 								    <div class="reset_main_box">
 										<p>Benefit</p>
 										<select multiple="multiple" class="select_template" id="Benefit">
-									       <option v-for="item in Benefit_list" v-bind:value="item.value">{{item.value}}</option>
+									       <option v-for="item in Lists.Benefit" v-bind:value="item.value">{{item.value}}</option>
 									    </select>
 								    </div>
 								    <div class="reset_main_box">
 										<p>Behavior</p>
 										<select multiple="multiple" class="select_template" id="Behavior">
-									       <option v-for="item in Behavior_list" v-bind:value="item.value">{{item.value}}</option>
+									       <option v-for="item in Lists.Behavior" v-bind:value="item.value">{{item.value}}</option>
 									       
 									    </select>
 								    </div>
 									<div class="reset_main_box">
 										<p>Keyword type</p>
 										<select multiple="multiple" class="select_template" id="keywordType">
-									       <option v-for="item in keywordType_list" v-bind:value="item.value">{{item.value}}</option>
+									       <option v-for="item in Lists.keywordType" v-bind:value="item.value">{{item.value}}</option>
 									       
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Platform</p>
+										<select multiple="multiple" class="select_template" id="Platform">
+									       <option v-for="item in Lists.Platform" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Category Price Range</p>
+										<select multiple="multiple" class="select_template" id="CategoryPriceRange">
+									       <option v-for="item in Lists.CategoryPriceRange" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Category Price</p>
+										<select multiple="multiple" class="select_template" id="CategoryPrice">
+									       <option v-for="item in Lists.CategoryPrice" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+									<div class="reset_main_box">
+										<p>Engine</p>
+										<select multiple="multiple" class="select_template" id="Engine">
+									       <option v-for="item in Lists.Engine" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Engine Size</p>
+										<select multiple="multiple" class="select_template" id="EngineSize">
+									       <option v-for="item in Lists.EngineSize" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Branded</p>
+										<select multiple="multiple" class="select_template" id="Branded">
+									       <option v-for="item in Lists.Branded" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Model</p>
+										<select multiple="multiple" class="select_template" id="Model">
+									       <option v-for="item in Lists.Model" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Brand Origin Region</p>
+										<select multiple="multiple" class="select_template" id="BrandOriginRegion">
+									       <option v-for="item in Lists.BrandOriginRegion" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Brand Origin Country</p>
+										<select multiple="multiple" class="select_template" id="BrandOriginCountry">
+									       <option v-for="item in Lists.BrandOriginCountry" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Gear Type</p>
+										<select multiple="multiple" class="select_template" id="GearType">
+									       <option v-for="item in Lists.GearType" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Drive Type</p>
+										<select multiple="multiple" class="select_template" id="DriveType">
+									       <option v-for="item in Lists.DriveType" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Seating Type</p>
+										<select multiple="multiple" class="select_template" id="SeatingType">
+									       <option v-for="item in Lists.SeatingType" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Driving Features</p>
+										<select multiple="multiple" class="select_template" id="DrivingFeatures">
+									       <option v-for="item in Lists.DrivingFeatures" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+									<div class="reset_main_box">
+										<p>Experience Features</p>
+										<select multiple="multiple" class="select_template" id="ExperienceFeatures">
+									       <option v-for="item in Lists.ExperienceFeatures" v-bind:value="item.value">{{item.value}}</option>
+									    </select>
+								    </div>
+								    <div class="reset_main_box">
+										<p>Life Stage</p>
+										<select multiple="multiple" class="select_template" id="LifeStage">
+									       <option v-for="item in Lists.LifeStage" v-bind:value="item.value">{{item.value}}</option>
 									    </select>
 								    </div>
 								    <div class="reset_main_box" id="time_box">
@@ -115,6 +205,11 @@
 									</div>
 								</div>
 								<div class="reset-footer">
+									<span id="Confirm_btn" v-on:click="onChangeChart()"><i class="fa fa-search"></i> Confirm</span>
+									
+								</div>
+								<div class="reset-footer" style="padding-top:10px;">
+									
 									<span id="Clear_btn" v-on:click="clearAll()"><i class="fa fa-trash"></i> Clear Selection</span>
 								</div>
 							</div>
@@ -203,7 +298,7 @@
 							      </div>
 							      <div>
 							     		
-							        	<Areaspline :id="chart_data.chart_1.id" :data="chart_data.chart_1.data" class="chart_box"></Areaspline>
+							        	<Areaspline :id="chart_data.chart_1.id" :data="chart_data.chart_1.data" :loadChart="loadChart" class="chart_box"></Areaspline>
 							        <!-- </div> -->
 							        
 							      </div>
@@ -225,7 +320,7 @@
 						                <div class="customize-label-x">Date</div>
 						            </div>
 						            <div>
-							        	<Area :id="chart_data.chart_2.id" :data="chart_data.chart_2.data" class="chart_box"></Area>
+							        	<Area :id="chart_data.chart_2.id" :data="chart_data.chart_2.data" :loadChart="loadChart" class="chart_box"></Area>
 							      	</div>
 						        </div>
 						    </div>
@@ -237,7 +332,7 @@
 						                    <div class="customize-label-y">Top 10 Behaviors</div>
 						                </div>
 						                <div style="width:100%;">
-						                	<Column class="chart_box1" :id="chart_data.chart_3_1.id" :data="chart_data.chart_3_1.data"></Column>
+						                	<Column class="chart_box1" :id="chart_data.chart_3_1.id" :data="chart_data.chart_3_1.data":loadChart="loadChart" ></Column>
 						                </div>
 						            </div>
 						        </div>
@@ -247,7 +342,7 @@
 						                    <div class="customize-label-y">Top 10 Benefits</div>
 						                </div>
 						                <div style="width:100%;">
-						                	<Bar class="chart_box1" :id="chart_data.chart_3_2.id" :data="chart_data.chart_3_2.data"></Bar>
+						                	<Bar class="chart_box1" :id="chart_data.chart_3_2.id" :data="chart_data.chart_3_2.data" :loadChart="loadChart"></Bar>
 						                </div>
 						            </div>
 						        </div>
@@ -267,40 +362,49 @@
 						    <!-- basic-brand -->
 						    <div class="basic-brand">
 						        <div>
-						        	<span class="span_title"><i class="fa fa-stop"></i>Basic VS. Premium
+						        	<span class="span_title"><i class="fa fa-stop"></i>Category Price Range Comparison
 						        		<div class="_tip-popup u-ml5 tip" style="display: inline-block;">
 						        			<i class="fa fa-exclamation-circle"></i>
-						        			<div class="_tip-popup__content bottom" style="display: none;width:300px">Brand keywords classified into Basic and Premium categories based on key product sales price
+						        			<div class="_tip-popup__content bottom" style="display: none;width:300px">Brand keywords classified into several categories based on key product sales price (Hover over the bar chart for further information)
 						        			</div>
 						        		</div>
 						        	</span>
 						            <div class="chart-wrapper">
 						                <div class="_block-wrapper">
 						                    <div class="grid-chart">
-						                        <div class="grid-chart__chart__title">
-						                            <div class="grid-chart__chart__title__item" style="color: rgb(74, 199, 220);">Basic</div>
-						                            <div class="grid-chart__chart__title__item" style="color: rgb(233, 108, 57);">Premium</div>
-						                        </div>
+						                        
 						                        <div class="grid-chart__chart__items">
-						                            <div class="grid-chart__chart__items__item" style="background: rgb(74, 199, 220);" v-bind:style="{width:BasicVSPremium.Basic.data1_1.percent}"></div>
+						                        	<div v-for="(item,index) in BasicVSPremium.Basic" class="grid-chart__chart__items__item" v-bind:style="{width:item.percent,background : colorList[index] }" v-bind:title="item.name+':'+item.value | formatNum"></div>
+						                            <!-- <div class="grid-chart__chart__items__item" style="background: rgb(74, 199, 220);" v-bind:style="{width:BasicVSPremium.Basic.data1_1.percent}"></div>
 						                            <div class="grid-chart__chart__items__item" style="background: rgb(233, 108, 57);" v-bind:style="{width:BasicVSPremium.Basic.data1_2.percent}"></div>
+						                            <div class="grid-chart__chart__items__item" style="background: rgb(47,208,181);" v-bind:style="{width:BasicVSPremium.Basic.data1_3.percent}"></div>
+						                            <div class="grid-chart__chart__items__item" style="background: rgb(198,224,180);" v-bind:style="{width:BasicVSPremium.Basic.data1_4.percent}"></div>
+						                             -->
 						                        </div>
 						                        <div class="grid-chart__chart__label">
-						                            <div class="grid-chart__chart__label__item" style="color: rgb(74, 199, 220);">
-						                               {{BasicVSPremium.Basic.data1_1.value | formatNum}} {{BasicVSPremium.Basic.data1_1.percent | formatPercent}}
+						                        	<div v-for="(item,index) in BasicVSPremium.Basic" class="grid-chart__chart__label__item" v-bind:style="{color : colorList[index] }" >
+						                        		{{item.name}}{{item.percent | formatPercent}}
+						                        	</div>
+						                           <!--  <div class="grid-chart__chart__label__item" style="color: rgb(74, 199, 220);">
+						                               {{BasicVSPremium.Basic.data1_1.name}} {{BasicVSPremium.Basic.data1_1.percent | formatPercent}}
 						                            </div>
 						                            <div class="grid-chart__chart__label__item" style="color: rgb(233, 108, 57);">
-						                                  {{BasicVSPremium.Basic.data1_2.value | formatNum}} {{BasicVSPremium.Basic.data1_2.percent | formatPercent}}
-						                                
+						                                  {{BasicVSPremium.Basic.data1_2.name}} {{BasicVSPremium.Basic.data1_2.percent | formatPercent}}
 						                            </div>
+						                            <div class="grid-chart__chart__label__item" style="color: rgb(47,208,181);">
+						                                  {{BasicVSPremium.Basic.data1_3.name }} {{BasicVSPremium.Basic.data1_3.percent | formatPercent}}
+						                            </div>
+						                            <div class="grid-chart__chart__label__item" style="color: rgb(198,224,180);">
+						                                  {{BasicVSPremium.Basic.data1_4.name 	}} {{BasicVSPremium.Basic.data1_4.percent | formatPercent}}
+						                            </div> -->
 						                        </div>
 						                    </div>
 						                    <div class="customize-label">
-						                        <div class="customize-label-y">Basic VS. Premium</div>
+						                        <div class="customize-label-y">Search Volumn</div>
 						                        <div class="customize-label-x">Date</div>
 						                    </div>
 						                    <div style="width:100%;">
-						                    	<line-Chart class="chart_box2" :id="chart_data.chart_4_1.id" :data="chart_data.chart_4_1.data"></line-Chart>
+						                    	<line-Chart class="chart_box2" :id="chart_data.chart_4_1.id" :data="chart_data.chart_4_1.data" :loadChart="loadChart"></line-Chart>
 						                    </div>
 						                </div>
 						            </div>
@@ -310,28 +414,24 @@
 						        		<i class="fa fa-stop"></i>Brands VS. Non-Brands
 						        		<div class="_tip-popup u-ml5 tip" style="display: inline-block;">
 						        			<i class="fa fa-exclamation-circle"></i>
-						        			<div class="_tip-popup__content bottom" style="display: none;width:250px">Brand keywords compared with non-Brand keywords covering all categories
+						        			<div class="_tip-popup__content bottom" style="display: none;width:250px">Brand keywords compared with non-Brand keywords covering all categories (Hover over the bar chart for further information)
 						        			</div>
 						        		</div>
 						        	</span>
 						            <div class="chart-wrapper labcharts-pie__chart__right">
 						                <div class="_block-wrapper">
 						                    <div class="grid-chart">
-						                        <div class="grid-chart__chart__title">
-						                            <div class="grid-chart__chart__title__item" style="color: rgb(74, 199, 220);">Brands</div>
-						                            <div class="grid-chart__chart__title__item" style="color: rgb(233, 108, 57);">Non-Brands</div>
-						                        </div>
+						                      
 						                        <div class="grid-chart__chart__items">
-						                            <div class="grid-chart__chart__items__item" style="background: rgb(74, 199, 220);" v-bind:style="{width:BasicVSPremium.Brand.data3_1.percent}"></div>
-						                            <div class="grid-chart__chart__items__item" style="background: rgb(233, 108, 57);"  v-bind:style="{width:BasicVSPremium.Brand.data3_2.percent}"></div>
+						                        	<div v-for="(item,index) in BasicVSPremium.Brand" class="grid-chart__chart__items__item" v-bind:style="{width:item.percent,background : colorList[index] }" v-bind:title="item.name+':'+item.value | formatNum"></div>
+						                           
 						                        </div>
 						                        <div class="grid-chart__chart__label">
-						                            <div class="grid-chart__chart__label__item" style="color: rgb(74, 199, 220);">
-						                                 {{BasicVSPremium.Brand.data3_1.value | formatNum}} {{BasicVSPremium.Brand.data3_1.percent | formatPercent}}
-						                            </div>
-						                            <div class="grid-chart__chart__label__item" style="color: rgb(233, 108, 57);">
-						                                 {{BasicVSPremium.Brand.data3_2.value | formatNum}} {{BasicVSPremium.Brand.data3_2.percent | formatPercent}}
-						                            </div>
+						                        	<div v-for="(item,index) in BasicVSPremium.Brand" class="grid-chart__chart__label__item" v-bind:style="{color : colorList[index] }">
+						                        		{{item.name}}{{item.value | formatNum}} {{item.percent | formatPercent}}
+						                        	</div>
+
+						                            
 						                        </div>
 						                    </div>
 						                    <div class="customize-label">
@@ -339,7 +439,7 @@
 						                        <div class="customize-label-x">Date</div>
 						                    </div>
 						                    <div style="width:100%;">
-						                    	<line-Chart class="chart_box2" :id="chart_data.chart_4_2.id" :data="chart_data.chart_4_2.data"></line-Chart>
+						                    	<line-Chart class="chart_box2" :id="chart_data.chart_4_2.id" :data="chart_data.chart_4_2.data" :loadChart="loadChart"></line-Chart>
 						                    </div>
 						                </div>
 						            </div>
@@ -375,7 +475,7 @@
     											</div>
 						                    </div>
 						                    <div class="brand-comparison__pie-chart" data-highcharts-chart="17">
-						                        <Pie class="chart_box_brand_comparison" :id="chart_data.chart_5_1.id" :data="chart_data.chart_5_1.data"></Pie>	
+						                        <Pie class="chart_box_brand_comparison" :id="chart_data.chart_5_1.id" :data="chart_data.chart_5_1.data" :loadChart="loadChart"></Pie>	
 						                    </div>
 						                    <div class="brand-comparison__line-chart">
 						                        <div class="customize-label">
@@ -383,7 +483,8 @@
 						                            <div class="customize-label-x" style="z-index:1">Date</div>
 						                        </div>
 						                        <div data-highcharts-chart="18">
-						                            <line-Chart class="chart_box_brand_comparison1" :id="chart_data.chart_5_2.id" :data="chart_data.chart_5_2.data"></line-Chart>
+						                            <line-Chart class="chart_box_brand_comparison1" :id="chart_data.chart_5_2.id" 
+						                            :data="chart_data.chart_5_2.data" :loadChart="loadChart"></line-Chart>
 						                        </div>
 						                    </div>
 						                </div>
@@ -397,12 +498,12 @@
 						            COMPETITIVE LANDSCAPE
 						          
 						            <div class="_tip-popup u-ml5 tip" style="display: inline-block;"><i class="fa fa-exclamation-circle"></i>
-						                <div class="_tip-popup__content bottom" style="display: none;width:370px">Frequency of ad appeared in SEM collated to determine share of search among home and competitor brands, based on common generic keywords covering all categories. </div>
+						                <div class="_tip-popup__content bottom" style="display: none;width:370px">Frequency of ad appeared in SEM collated to determine share of search among home and competitor brands, based on common generic keywords covering all categories. (Mouse drag to zoom in specific area) </div>
 						            </div>
 						        </div>
 						        <div class="_block-wrapper">
 						            <div style="width:100%;">
-						                  <Bubble class="chart_box3" :id="chart_data.chart_6.id" :data="chart_data.chart_6.data"></Bubble>  	
+						                  <Bubble class="chart_box3" :id="chart_data.chart_6.id" :data="chart_data.chart_6.data" :loadChart="loadChart"></Bubble>  	
 						             </div>
 						        </div>
 						    </div>
@@ -487,116 +588,153 @@ export default {
   name: 'Home',
   data () {
     return {
-      brand_checked:'',
-      compareChecked:false,
-      compareNum:0,
-      compareData:{
-      	compare1:{},
-      	compare2:{}
-      },
-      BasicVSPremium:{
-      	Basic:{
-      		data1_1:{
-      			name: "",
-	      		value: 0,
-	      		percent: "" 
-      		},
-      		data1_2:{
-      			name: "",
-	      		value: 0,
-	      		percent: ""
-      		}
-      	},
-      	Brand:{
-      		data3_1:{
-      			name: "",
-	      		value: 0,
-	      		percent: ""
-      		},
-      		data3_2:{
-      			name: "",
-	      		value: 0,
-	      		percent: ""
-      		}
-      	}
-      },
-      chart_data:{
-      	chart_1:{
-      		id: 'chart_1',
-      		data: "",
-      	},
-      	chart_2:{
-      		id: 'chart_2',
-      		data: "",
-      	},
-      	chart_3_1:{
-      		id: 'chart_3_1',
-      		data: "",
-      	},
-      	chart_3_2:{
-      		id: 'chart_3_2',
-      		data: "",
-      	},
-      	chart_4_1:{
-      		id: 'chart_4_1',
-      		data: "",
-      	},
-      	chart_4_2:{
-      		id: 'chart_4_2',
-      		data: "",
-      	},
-      	chart_5_1:{
-      		id: 'chart_5_1',
-      		data: 'data_5_1',
-      	},
-      	chart_5_2:{
-      		id: 'chart_5_2',
-      		data: "",
-      	},
-      	chart_6:{
-      		id: 'chart_6',
-      		data: '',
-      	},
+	      brand_checked:'',
+	      compareChecked:false,
+	      compareNum:0,
+	      compareData:{
+	      	compare1:{},
+	      	compare2:{}
+	      },
+	      BasicVSPremium:{
+	      	Basic:[
+	      		{
+	      			name: "",
+		      		value: 0,
+		      		percent: "" 
+	      		}
+	      	],
+	      	Brand:[
+	      		{
+	      			name: "",
+		      		value: 0,
+		      		percent: ""
+	      		}
+	      	]
+	      },
+	      chart_data:{
+	      	chart_1:{
+	      		id: 'chart_1',
+	      		data: "",
+	      	},
+	      	chart_2:{
+	      		id: 'chart_2',
+	      		data: "",
+	      	},
+	      	chart_3_1:{
+	      		id: 'chart_3_1',
+	      		data: "",
+	      	},
+	      	chart_3_2:{
+	      		id: 'chart_3_2',
+	      		data: "",
+	      	},
+	      	chart_4_1:{
+	      		id: 'chart_4_1',
+	      		data: "",
+	      	},
+	      	chart_4_2:{
+	      		id: 'chart_4_2',
+	      		data: "",
+	      	},
+	      	chart_5_1:{
+	      		id: 'chart_5_1',
+	      		data: '',
+	      	},
+	      	chart_5_2:{
+	      		id: 'chart_5_2',
+	      		data: "",
+	      	},
+	      	chart_6:{
+	      		id: 'chart_6',
+	      		data: '',
+	      	},
 
-      },
-      table_data:{
-      	table1:"",
-      	table2:"",
-      	table3:"",
-      	table4:""      
-      },
-      options1: [],
-      options2: [],
-       options1_selected:"",
-       options2_selected:"",
-       
-       Category_list:[],
-       SubCategory_list:[],
-       Benefit_list:[],
-       Behavior_list:[],
-       keywordType_list:[],
-       select_data:{
-		  Category:"All",
-		  Brand:"All",
-		  SubCategory:"All",
-		  Benefit:"All",
-		  Behavior:"All",
-		  KeywordType:"All",
-		  Platform:"All",
-		  StartDate:"2018-01-10",
-		  EndDate:"2018-01-25" 
-		},
-		select_brand_data:{
-		  Category:"All",
-		  Brand:"All",
-		  SubCategory:"All",
-		  Benefit:"All",
-		  Behavior:"All",
-		  KeywordType:"All",
-		  Platform:"All",
-		  StartDate:"2018-01-10",
-		  EndDate:"2018-01-25" 
-		}
+	      },
+	      table_data:{
+	      	table1:"",
+	      	table2:"",
+	      	table3:"",
+	      	table4:""      
+	      },
+	      options1: [],
+	      options2: [],
+	      options1_selected:"",
+	      options2_selected:"",
+	      Lists:{
+	      	  Category:[],
+			  SubCategory:[],
+			  Benefit:[],
+			  Behavior:[],
+			  keywordType:[],
+			  Platform:[],
+			  CategoryPriceRange:[],
+			  CategoryPrice:[],
+			  Engine:[],
+			  EngineSize:[],
+			  Branded:[],
+			  Model:[],
+			  BrandOriginRegion:[],
+			  BrandOriginCountry:[],
+			  GearType:[],
+			  DriveType:[],
+			  SeatingType:[],
+			  DrivingFeatures:[],
+			  ExperienceFeatures:[],
+			  LifeStage:[]
+	      },
+		 select_data:{
+		 	  Category:"All",
+			  SubCategory:"All",
+			  Benefit:"All",
+			  Behavior:"All",
+			  KeywordType:"All",
+			  Platform:"All",
+			  Brand:"All",
+			  StartDate:"",
+			  EndDate:"",
+			  domain:"yiche.com ",
+			  CategoryPriceRange:"All",
+			  CategoryPrice:"All",
+			  Engine:"All",
+			  EngineSize:"All",
+			  Branded:"All",
+			  Model:"All",
+			  BrandOriginRegion:"All",
+			  BrandOriginCountry:"All",
+			  GearType:"All",
+			  DriveType:"All",
+			  SeatingType:"All",
+			  DrivingFeatures:"All",
+			  ExperienceFeatures:"All",
+			  LifeStage:"All"
+		 },
+		  select_brand_data:{
+			Category:"All",
+			Brand:"All",
+			SubCategory:"All",
+			Benefit:"All",
+			Behavior:"All",
+			KeywordType:"All",
+			Platform:"All",
+			CategoryPriceRange:"All",
+			CategoryPrice:"All",
+			Engine:"All",
+			EngineSize:"All",
+			Branded:"All",
+			Model:"All",
+			BrandOriginRegion:"All",
+			BrandOriginCountry:"All",
+			GearType:"All",
+			DriveType:"All",
+			SeatingType:"All",
+			DrivingFeatures:"All",
+			ExperienceFeatures:"All",
+			LifeStage:"All",
+			StartDate:"",
+		  	EndDate:"",
+		  },
+		  loadChart:false,
+		  colorList:['rgb(74, 199, 220)','rgb(233, 108, 57)','rgb(47,208,181)','rgb(198,224,180)']
     }
   },
   components: {
@@ -648,8 +786,8 @@ export default {
 				"opens":"right",  
 				"timePicker":false,  
 				'applyClass':'apply_class',
-				"startDate":this.select_data.StartDate,
-    			"endDate":this.select_data.EndDate
+				"startDate":moment().subtract(11, 'days').format('YYYY-MM-DD'),
+    			"endDate":moment().subtract(2, 'days').format('YYYY-MM-DD')
 				
         })
         
@@ -696,28 +834,17 @@ export default {
 	    // 下拉选项
         this.$http({
             method:'get',
-            url:'http://10.143.103.231:8080/BMW/OnloadSelection.do',
+            url:'http://114.55.92.124:7070/BMW/OnloadSelection.do',
         }).then(response =>{
-            this.Category_list = response.data.Category;
-            this.SubCategory_list = response.data.SubCategory;
-            this.Benefit_list = response.data.Benefit;
-            this.Behavior_list = response.data.Behavior;
-            this.keywordType_list = response.data.keywordType;
+            this.Lists = response.data;
             var _this = this
             this.$nextTick(function() {
             	$(".select_template").multipleSelect({
 		            filter: true,
 		            selectAllText:'All',
 		            maxHeight:'150',
-		            onClose: function() {
-		            	_this.select_data.Category=$("#Category").multipleSelect("getSelects").toString()
-		            	_this.select_data.SubCategory=$("#SubCategory").multipleSelect("getSelects").toString()
-		            	_this.select_data.Benefit=$("#Benefit").multipleSelect("getSelects").toString()
-		            	_this.select_data.Behavior=$("#Behavior").multipleSelect("getSelects").toString()
-		            	_this.select_data.KeywordType=$("#keywordType").multipleSelect("getSelects").toString()
-
-		            	_this.onChangeChart()
-		            }
+		            // onClose: function() {
+		            // }
 		        });
 		       $("select").multipleSelect('checkAll')
             })
@@ -729,7 +856,9 @@ export default {
 
         //onload chart
 
-        let loadingInstance = this.$loading({fullscreen:true,lock: true,
+        let loadingInstance = this.$loading({
+          fullscreen:true,
+          lock: true,
           text: 'Loading',
           spinner: 'el-icon-loading',
           background: 'rgba(0, 0, 0, 0.7)'
@@ -738,13 +867,18 @@ export default {
 
         this.$http({
             method:'get',
-            url:'http://10.143.103.231:8080/BMW/SessionControlServlet.do',
+          	// url:'http://114.55.92.124:7070/BMW/SessionControlServlet.do',
+            url:'http://114.55.92.124:7070/BMW/SessionControlServlet.do',
             withCredentials: true
         }).then(response =>{
-           console.log(response)
+          
         })
 
-
+        let timePicker = $("#time").val();
+  		let startDate = $("#time").val().split(" to ")[0];
+  		let endDate= $("#time").val().split(" to ")[1];
+  		this.select_data.StartDate = startDate;
+  		this.select_data.EndDate = endDate;
 
         var  _this = this;
 		this.$http.all(
@@ -753,13 +887,8 @@ export default {
         	this.getSearchVolumeTrends(),
         	this.getTop10TrendingProducts(),
         	this.getTop10BehaviorsBenefits(),
-        	this.getTop20Keywords(),
-        	this.getBasicVSPremiumAndBrandsVSNonBrands(),
-        	this.getBrandComparison(),
-        	this.getCompetitiveLandscape(),
-        	this.getBrandSelect()
         	]
-        ).then(this.$http.spread(function (arr1, arr2,arr3,arr4,arr5,arr6,arr7,arr8,arr9) {
+        ).then(this.$http.spread(function (arr1, arr2,arr3,arr4) {
 				// searchVolume        	
 			   _this.chart_data.chart_1.data = arr1.data.OnlysearchVolumeTrends;
 			   _this.compareData.compare1 = arr1.data.OnlysearchVolumeTrends;
@@ -773,6 +902,25 @@ export default {
 			   _this.chart_data.chart_3_1.data = arr4.data.Top10Behaviors;
 			   _this.chart_data.chart_3_2.data = arr4.data.Top10Benefits;
 
+			  
+			   _this.selectDisabled();
+			   _this.selectDisabled1();
+
+			   loadingInstance.close();
+ 		}))
+       
+
+
+        this.$http.all(
+        	[
+        	this.getTop20Keywords(),
+        	this.getBasicVSPremiumAndBrandsVSNonBrands(),
+        	this.getBrandComparison(),
+        	this.getCompetitiveLandscape(),
+        	this.getBrandSelect()
+        	]
+        ).then(this.$http.spread(function (arr5,arr6,arr7,arr8,arr9) {
+				
 			   //table_data
 			   _this.table_data.table1= arr5.data.Top20Keywords[0]
 			   _this.table_data.table2= arr5.data.Top20Keywords[1]
@@ -782,8 +930,8 @@ export default {
 			   // BasicVSPremiumAndBrandsVSNonBrands
 			   _this.chart_data.chart_4_1.data = arr6.data.BasicVSPremium;
 			   _this.chart_data.chart_4_2.data = arr6.data.BrandsVSNonBrands;
-			   _this.BasicVSPremium.Basic = arr6.data.TitleBasicVSPremium;
-			   _this.BasicVSPremium.Brand = arr6.data.TitleBrandsVSNonBrands;
+			   _this.BasicVSPremium.Basic = arr6.data.TitleBasicVSPremium.data;
+			   _this.BasicVSPremium.Brand = arr6.data.TitleBrandsVSNonBrands.data;
 
 			   // BrandComparison
 			   _this.chart_data.chart_5_1.data = arr7.data.BrandComparisonPieChart;
@@ -803,10 +951,8 @@ export default {
 			   _this.selectDisabled();
 			   _this.selectDisabled1();
 
-			   loadingInstance.close();
+			  
  		}))
-       
-
         
 
 
@@ -816,17 +962,6 @@ export default {
   	},
   	clearAll:function(){
   		$("select").multipleSelect('checkAll');
-  		this.select_data={
-		  Category:"All",
-		  Brand:"All",
-		  SubCategory:"All",
-		  Benefit:"All",
-		  Behavior:"All",
-		  KeywordType:"All",
-		  Platform:"All",
-		  StartDate:"2018-01-10",
-		  EndDate:"2018-01-25" 
-		}
 		this.onChangeChart()
 
   	},
@@ -845,6 +980,71 @@ export default {
 
   	},
   	onChangeChart(){
+  		this.BasicVSPremium={
+      	Basic:[
+      		{
+      			name: "",
+	      		value: 0,
+	      		percent: "" 
+      		}
+      	],
+      	Brand:[
+      		{
+      			name: "",
+	      		value: 0,
+	      		percent: ""
+      		}
+      	]
+      };
+
+  		 this.chart_data={
+      	chart_1:{
+      		id: 'chart_1',
+      		data: "",
+      	},
+      	chart_2:{
+      		id: 'chart_2',
+      		data: "",
+      	},
+      	chart_3_1:{
+      		id: 'chart_3_1',
+      		data: "",
+      	},
+      	chart_3_2:{
+      		id: 'chart_3_2',
+      		data: "",
+      	},
+      	chart_4_1:{
+      		id: 'chart_4_1',
+      		data: "",
+      	},
+      	chart_4_2:{
+      		id: 'chart_4_2',
+      		data: "",
+      	},
+      	chart_5_1:{
+      		id: 'chart_5_1',
+      		data: '',
+      	},
+      	chart_5_2:{
+      		id: 'chart_5_2',
+      		data: "",
+      	},
+      	chart_6:{
+      		id: 'chart_6',
+      		data: '',
+      	},
+
+      };
+      this.table_data={
+      	table1:"",
+      	table2:"",
+      	table3:"",
+      	table4:""      
+      }
+
+      this.loadChart = true
+  		
   		let timePicker = $("#time").val();
   		let startDate = $("#time").val().split(" to ")[0];
   		let endDate= $("#time").val().split(" to ")[1];
@@ -852,27 +1052,27 @@ export default {
   		this.select_data.EndDate = endDate;
   		var _this = this;
 
+  		this.getSelectsed()
+
   		let loadingInstance = this.$loading({fullscreen:true,lock: true,
           text: 'Loading',
           spinner: 'el-icon-loading',
           background: 'rgba(0, 0, 0, 0.7)'
         });
+  		
   		this.$http.all(
         	[
         	this.getOnlySearchVolumeTrends(),
         	this.getSearchVolumeTrends(),
         	this.getTop10TrendingProducts(),
         	this.getTop10BehaviorsBenefits(),
-        	this.getTop20Keywords(),
-        	this.getBasicVSPremiumAndBrandsVSNonBrands(),
-        	this.getBrandComparison(),
-        	this.getCompetitiveLandscape(),
-        	this.getBrandSelect()
         	]
-        ).then(this.$http.spread(function (arr1, arr2,arr3,arr4,arr5,arr6,arr7,arr8,arr9) {
+        ).then(this.$http.spread(function (arr1, arr2,arr3,arr4) {
+
+        		_this.loadChart = false
         		// searchVolume  
 
-        		if(arr1.data.Message == "Success" || arr2.data.Message =="Success"){
+        	
         			_this.compareData.compare1 = arr1.data.OnlysearchVolumeTrends;
 			   		_this.compareData.compare2 = arr2.data.searchVolumeTrends;
 					if(_this.compareNum ==1){
@@ -880,109 +1080,139 @@ export default {
 					}else if(_this.compareNum == 0){
 						_this.chart_data.chart_1.data = arr1.data.OnlysearchVolumeTrends;
 					}   
-        		}else{
-        			_this.compareData.compare1 = "";
-			   		_this.compareData.compare2 = "";
+        		
+     //    			_this.compareData.compare1 = "";
+			  //  		_this.compareData.compare2 = "";
 
-			   		if(_this.compareNum ==1){
-					  _this.chart_data.chart_1.data = "";
-					}else if(_this.compareNum == 0){
-						_this.chart_data.chart_1.data = "";
-					} 
-        		}
+			  //  		if(_this.compareNum ==1){
+					//   _this.chart_data.chart_1.data = "";
+					// }else if(_this.compareNum == 0){
+					// 	_this.chart_data.chart_1.data = "";
+					// } 
+        		
 				
 			   	
 
 			   // Top10TrendingProducts
-			   if(arr3.data.Message == "Success"){
+			 
 				   _this.chart_data.chart_2.data = arr3.data.Top10TrendingProducts;
-				}else{
-				   _this.chart_data.chart_2.data =""
+			
+				   // _this.chart_data.chart_2.data =""
         			
-        		}
+        		
 
 			   // Top10BehaviorsBenefits
-			   if(arr4.data.Message == "Success"){
+			  
 				   _this.chart_data.chart_3_1.data = arr4.data.Top10Behaviors;
 				   _this.chart_data.chart_3_2.data = arr4.data.Top10Benefits;
-				}else{
-				   _this.chart_data.chart_3_1.data = "";
-				   _this.chart_data.chart_3_2.data = "";
-        		}
+				
+				   // _this.chart_data.chart_3_1.data = "";
+				   // _this.chart_data.chart_3_2.data = "";
+        		
+			   
+			    _this.selectDisabled();
+		   		_this.selectDisabled1();
+				
+
+			   loadingInstance.close();
+
+ 		}))
+
+		this.$http.all(
+        	[
+    
+        	this.getTop20Keywords(),
+        	this.getBasicVSPremiumAndBrandsVSNonBrands(),
+        	this.getBrandComparison(),
+        	this.getCompetitiveLandscape(),
+        	this.getBrandSelect()
+        	]
+        ).then(this.$http.spread(function (arr5,arr6,arr7,arr8,arr9) {
+        	 	_this.loadChart = false
 			   //table_data
 
-			   if(arr5.data.Message == "Success"){
+			 
 				   _this.table_data.table1= arr5.data.Top20Keywords[0]
 				   _this.table_data.table2= arr5.data.Top20Keywords[1]
 				   _this.table_data.table3= arr5.data.Top20Keywords[2]
 				   _this.table_data.table4= arr5.data.Top20Keywords[3]
-				}else{
-        			 _this.table_data.table1= ""
-				   _this.table_data.table2= ""
-				   _this.table_data.table3= ""
-				   _this.table_data.table4= ""
-        		}
+				
+       //  			 _this.table_data.table1= ""
+				   // _this.table_data.table2= ""
+				   // _this.table_data.table3= ""
+				   // _this.table_data.table4= ""
+        		
 
 			   // BasicVSPremiumAndBrandsVSNonBrands
-			   if(arr6.data.Message == "Success"){
+			 
 				   _this.chart_data.chart_4_1.data = arr6.data.BasicVSPremium;
 				   _this.chart_data.chart_4_2.data = arr6.data.BrandsVSNonBrands;
-				   _this.BasicVSPremium.Basic = arr6.data.TitleBasicVSPremium;
-				   _this.BasicVSPremium.Brand = arr6.data.TitleBrandsVSNonBrands;
-				}else{
-        		  _this.chart_data.chart_4_1.data = "";
-				   _this.chart_data.chart_4_2.data = "";
-				  _this.BasicVSPremium = {
-					  Basic: {
-					    data1_1: {
-					      name: "",
-					      value: 0,
-					      percent: ""
-					    },
-					    data1_2: {
-					      name: "",
-					      value: 0,
-					      percent: ""
-					    }
-					  },
-					  Brand: {
-					    data3_1: {
-					      name: "",
-					      value: 0,
-					      percent: ""
-					    },
-					    data3_2: {
-					      name: "",
-					      value: 0,
-					      percent: ""
-					    }
-					  }
-					}
+				   _this.BasicVSPremium.Basic = arr6.data.TitleBasicVSPremium.data;
+				   _this.BasicVSPremium.Brand = arr6.data.TitleBrandsVSNonBrands.data;
+				
+     //    		  _this.chart_data.chart_4_1.data = "";
+				 //   _this.chart_data.chart_4_2.data = "";
+				 //  _this.BasicVSPremium = {
+					//   Basic: {
+					//     data1_1:{
+			  //     			name: "",
+				 //      		value: 0,
+				 //      		percent: "" 
+			  //     		},
+			  //     		data1_2:{
+			  //     			name: "",
+				 //      		value: 0,
+				 //      		percent: ""
+			  //     		},
+			  //     		data1_3:{
+			  //     			name: "",
+				 //      		value: 0,
+				 //      		percent: "" 
+			  //     		},
+			  //     		data1_4:{
+			  //     			name: "",
+				 //      		value: 0,
+				 //      		percent: ""
+			  //     		}
+					//   },
+					//   Brand: {
+					//     data3_1: {
+					//       name: "",
+					//       value: 0,
+					//       percent: ""
+					//     },
+					//     data3_2: {
+					//       name: "",
+					//       value: 0,
+					//       percent: ""
+					//     }
+					//   }
+					// }
 				   // _this.BasicVSPremium.Brand = "";
 
 				   // alert("sdd")
-        		}
+        		
 
 			   // BrandComparison
-			   if(arr7.data.Message == "Success"){
+			
 				   _this.chart_data.chart_5_1.data = arr7.data.BrandComparisonPieChart;
 				   _this.chart_data.chart_5_2.data = arr7.data.BrandComparisonLineChart;
 			
-				}else{
-        			  _this.chart_data.chart_5_1.data = "";
-				   _this.chart_data.chart_5_2.data = "";
-        		}
+				
+       //  			  _this.chart_data.chart_5_1.data = "";
+				   // _this.chart_data.chart_5_2.data = "";
+        		
 
 
 			   // CompetitiveLandscape
-			   if(arr8.data.Message == "Success"){
+			  
 				   _this.chart_data.chart_6.data = arr8.data.CompetitiveLandscape;
-				}else{
-				   _this.chart_data.chart_6.data = "";
+				
+				   // _this.chart_data.chart_6.data = "";
         			
-        		}
+        		
 
-				if(arr9.data.Message == "Success"){
+				
 				   _this.options1 = arr9.data.BrandSelect
 
 				   _this.options2 = arr9.data.BrandSelect1
@@ -992,84 +1222,105 @@ export default {
 
 				    _this.selectDisabled();
 			   		_this.selectDisabled1();
-				}else{
-        			 _this.options1 = ""
+			
+       //  			 _this.options1 = ""
 
-				   _this.options2 = ""
+				   // _this.options2 = ""
 
-				   _this.options1_selected =""
-				   _this.options2_selected = "";
+				   // _this.options1_selected =""
+				   // _this.options2_selected = "";
 
-				    _this.selectDisabled();
-			   		_this.selectDisabled1();
-        		}
-			  
-
-			   loadingInstance.close();
+				   //  _this.selectDisabled();
+			   	// 	_this.selectDisabled1();
+        		
 
  		}))
   		
   	},
+  	getSelectsed(){
+  		var _this = this;
+  		_this.select_data.Category=$("#Category").multipleSelect("getSelects").toString()
+    	_this.select_data.SubCategory=$("#SubCategory").multipleSelect("getSelects").toString()
+    	_this.select_data.Benefit=$("#Benefit").multipleSelect("getSelects").toString()
+    	_this.select_data.Behavior=$("#Behavior").multipleSelect("getSelects").toString()
+    	_this.select_data.KeywordType=$("#keywordType").multipleSelect("getSelects").toString()
+    	_this.select_data.Platform=$("#Platform").multipleSelect("getSelects").toString()
+    	_this.select_data.CategoryPriceRange=$("#CategoryPriceRange").multipleSelect("getSelects").toString()
+    	_this.select_data.CategoryPrice=$("#CategoryPrice").multipleSelect("getSelects").toString()
+    	_this.select_data.Engine=$("#Engine").multipleSelect("getSelects").toString()
+    	_this.select_data.EngineSize=$("#EngineSize").multipleSelect("getSelects").toString()
+    	_this.select_data.Branded=$("#Branded").multipleSelect("getSelects").toString()
+    	_this.select_data.Model=$("#Model").multipleSelect("getSelects").toString()
+    	_this.select_data.BrandOriginRegion=$("#BrandOriginRegion").multipleSelect("getSelects").toString()
+    	_this.select_data.BrandOriginCountry=$("#BrandOriginCountry").multipleSelect("getSelects").toString()
+    	_this.select_data.GearType=$("#GearType").multipleSelect("getSelects").toString()
+    	_this.select_data.DriveType=$("#DriveType").multipleSelect("getSelects").toString()
+    	_this.select_data.SeatingType=$("#SeatingType").multipleSelect("getSelects").toString()
+    	_this.select_data.DrivingFeatures=$("#DrivingFeatures").multipleSelect("getSelects").toString()
+    	_this.select_data.ExperienceFeatures=$("#ExperienceFeatures").multipleSelect("getSelects").toString()
+    	_this.select_data.LifeStage=$("#LifeStage").multipleSelect("getSelects").toString()
+
+  	},
   	getOnlySearchVolumeTrends(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getOnlySearchVolumeTrends.do',
+            url:'http://114.55.92.124:7070/BMW/getOnlySearchVolumeTrends.do',
             data:this.select_data
         })
   	},
   	getSearchVolumeTrends(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getSearchVolumeTrends.do',
+            url:'http://114.55.92.124:7070/BMW/getSearchVolumeTrends.do',
             data:this.select_data
         })
   	},
   	getTop10TrendingProducts(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getTop10TrendingProducts.do',
+            url:'http://114.55.92.124:7070/BMW/getTop10TrendingProducts.do',
             data:this.select_data
         })
   	},
   	getTop10BehaviorsBenefits(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getTop10BehaviorsBenefits.do',
+            url:'http://114.55.92.124:7070/BMW/getTop10BehaviorsBenefits.do',
             data:this.select_data
         })
   	},
   	getTop20Keywords(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getTop20Keywords.do',
+            url:'http://114.55.92.124:7070/BMW/getTop20Keywords.do',
             data:this.select_data
         })
   	},
   	getBasicVSPremiumAndBrandsVSNonBrands(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getBasicVSPremiumAndBrandsVSNonBrands.do',
+            url:'http://114.55.92.124:7070/BMW/getBasicVSPremiumAndBrandsVSNonBrands.do',
             data:this.select_data
         })
   	},
   	getBrandComparison(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getBrandComparison.do',
+            url:'http://114.55.92.124:7070/BMW/getBrandComparison.do',
             data:this.select_data
         })
   	},
   	getCompetitiveLandscape(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getCompetitiveLandscape.do',
+            url:'http://114.55.92.124:7070/BMW/getCompetitiveLandscape.do',
             data:this.select_data
         })
   	},
   	getBrandSelect(){
   		return this.$http({
             method:'post',
-            url:'http://10.143.103.231:8080/BMW/getBrandSelect.do',
+            url:'http://114.55.92.124:7070/BMW/getBrandSelect.do',
             data:this.select_data
         })
   	},
@@ -1085,7 +1336,7 @@ export default {
   		this.select_brand_data.EndDate = endDate;
   		this.$http({
                     method:'post',
-                    url:'http://10.143.103.231:8080/BMW/getBrandComparison.do',
+                    url:'http://114.55.92.124:7070/BMW/getBrandComparison.do',
                     data:this.select_brand_data
                 }).then(response =>{
                   this.chart_data.chart_5_1.data = _this.sort_pie(response.data.BrandComparisonPieChart);
@@ -1116,7 +1367,7 @@ export default {
   	logout(){
   		this.$http({
                     method:'post',
-                    url:'http://10.143.103.231:8080/BMW/LoginServlet.do',
+                    url:'http://114.55.92.124:7070/BMW/LoginServlet.do',
                     data:{
                         'adminv':"",
                         'passv':"",

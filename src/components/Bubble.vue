@@ -1,7 +1,7 @@
 <template>
   <div class="x-bar">
     <div :id="id"
-    :data="data"></div>
+    :data="data" :loadChart="loadChart"></div>
   </div>
 </template>
 
@@ -17,7 +17,8 @@ export default {
     },
     data: {
      
-    }
+    },
+     loadChart:Boolean
   },
   data(){
     return {
@@ -96,9 +97,24 @@ export default {
   },
   methods: {  
         queryTrendData: function(){
+
+          const loading = this.$loading({
+            lock: true,
+            text: 'Loading',
+            spinner: 'el-icon-loading',
+            background: 'rgba(0, 0, 0, 0.2)',
+            target: document.querySelector('#'+this.id)
+          });
+            if(this.loadChart == true){
+
+            }else{
+              loading.close()
           this.option.xAxis.categories = this.data.xAxis
-          this.option.series = this.data.series
-          HighCharts.chart(this.id,this.option)
+            this.option.series = this.data.series
+            HighCharts.chart(this.id,this.option)
+            
+          }
+        
         }  
     }, 
   watch:{
